@@ -1,0 +1,17 @@
+@startuml
+
+class Lease {
+    // 租约持有者
+    private final String holder;
+
+
+    // 最近更新时间
+    private long lastUpdate;
+
+
+    // 当前租约持有者打开的文件
+    private  HashSet<Long> files = new HashSet<>();
+
+}
+
+@enduml
