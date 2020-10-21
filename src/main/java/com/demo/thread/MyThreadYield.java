@@ -8,6 +8,7 @@ package com.demo.thread;
  */
 public class MyThreadYield implements Runnable {
 
+    @Override
     public void run() {
         for (int i = 0; i < 30; i++) {
             System.out.println(Thread.currentThread().getName() + "线程第" + i + "次执行！");

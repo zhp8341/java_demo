@@ -15,6 +15,7 @@ public class JoinThread   {
 
         Thread t = new Thread(new Runnable()
         {
+            @Override
             public void run()
             {
 
@@ -33,6 +34,7 @@ public class JoinThread   {
 
         Thread t1 = new Thread(new Runnable()
         {
+            @Override
             public void run()
             {
                 System.out.println("t1 task completed");

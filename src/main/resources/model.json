@@ -1,0 +1,15 @@
+
+{
+  "version": "1.0",
+  "defaultSchema": "TEST_CSV",
+  "schemas": [
+    {
+      "name": "TEST_CSV",
+      "type": "custom",
+      "factory": "calcite.csv.CsvSchemaFactory",
+      "operand": {
+        "dataFile": "TEST01.csv"
+      }
+    }
+  ]
+}
