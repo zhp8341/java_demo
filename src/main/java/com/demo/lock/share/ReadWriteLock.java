@@ -10,8 +10,8 @@ import java.util.concurrent.locks.ReentrantReadWriteLock;
  */
 public class ReadWriteLock {
 
-    public static void main(String[] args){
-        ReentrantReadWriteLock readWriteLock=new ReentrantReadWriteLock(true);
+    public static void main(String[] args) {
+        ReentrantReadWriteLock readWriteLock = new ReentrantReadWriteLock(true);
 
 //        new Thread(new ReadLock(readWriteLock)).start();
 //        new Thread(new ReadLock(readWriteLock)).start();
@@ -19,9 +19,9 @@ public class ReadWriteLock {
 //        new Thread(new ReadLock(readWriteLock)).start();
 
 
-        new Thread(new WriteLock(readWriteLock)).start();
-        new Thread(new WriteLock(readWriteLock)).start();
-        new Thread(new WriteLock(readWriteLock)).start();
-        new Thread(new WriteLock(readWriteLock)).start();
+        new Thread(new WriteLock(readWriteLock, "1")).start();
+        new Thread(new WriteLock(readWriteLock, "2")).start();
+        new Thread(new WriteLock(readWriteLock, "3")).start();
+        new Thread(new WriteLock(readWriteLock, "4")).start();
     }
 }

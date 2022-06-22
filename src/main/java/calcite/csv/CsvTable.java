@@ -17,7 +17,7 @@ import org.apache.calcite.util.Source;
 import java.io.*;
 import java.util.List;
 
-public class CsvTable extends AbstractTable implements ScannableTable {
+public  class CsvTable extends AbstractTable implements ScannableTable {
     private Source source;
 
     public CsvTable(Source source) {

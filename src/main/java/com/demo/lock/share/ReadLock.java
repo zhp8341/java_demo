@@ -12,16 +12,19 @@ public class ReadLock implements Runnable {
 
     private ReentrantReadWriteLock readLock;
 
+    private String name;
 
-    public ReadLock(ReentrantReadWriteLock readLock) {
+
+    public ReadLock(ReentrantReadWriteLock readLock, String name) {
         this.readLock = readLock;
+        this.name = name;
     }
 
     public void run() {
-        while (true){
+        while (true) {
             readLock.readLock().lock();
             try {
-                System.out.println(Thread.currentThread().getName() + " get read lock ");
+                System.out.println(Thread.currentThread().getName() + " get read lock :" + name);
                 Thread.sleep(5000);
             } catch (Exception e) {
                 e.printStackTrace();

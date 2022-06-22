@@ -10,7 +10,7 @@ import java.util.Objects;
  * @date 2019-08-18
  * @time 21:50
  */
-public class ObjectMain {
+public class ObjectMain  extends  Object{
 
     public static void main(String[] args) {
 

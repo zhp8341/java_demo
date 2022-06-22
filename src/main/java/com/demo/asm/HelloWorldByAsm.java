@@ -13,10 +13,6 @@ import org.objectweb.asm.Opcodes;
 
 import java.lang.reflect.Method;
 
-/**
- * @author dadiyang
- * @date 2019/1/13
- */
 public class HelloWorldByAsm {
 
     public static void main(String[] args) throws Exception {
